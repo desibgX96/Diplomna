@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<photographers>
+    <photographer name="Deetta Beausoleil" primary-camera="Canon 60D">
+        <lenses>
+            <lens>Canon 24 mm f3.5</lens>
+            <lens>Canon 11 mm f3.5</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Keely Futrell" primary-camera="Pentax K-5 II">
+        <lenses>
+            <lens>Pentax 16 mm f2.799999952316284</lens>
+            <lens>Pentax 600 mm f4.0</lens>
+            <lens>Pentax 200 mm f4.0</lens>
+            <lens>Pentax 360 mm f4.0</lens>
+            <lens>Pentax 14 mm f2.799999952316284</lens>
+            <lens>Pentax 135 mm f2.799999952316284</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Annabelle Nimmo" primary-camera="Canon 5D Mk II">
+        <lenses>
+            <lens>Sigma 35 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Wilfredo Finnegan" primary-camera="Nikon D40">
+        <lenses>
+            <lens>Tokina 135 mm f2.799999952316284</lens>
+            <lens>Nikon 200 mm f2.799999952316284</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Keely Futrell" primary-camera="Pentax K-5 II">
+        <lenses>
+            <lens>Pentax 16 mm f2.799999952316284</lens>
+            <lens>Pentax 600 mm f4.0</lens>
+            <lens>Pentax 14 mm f2.799999952316284</lens>
+            <lens>Pentax 200 mm f4.0</lens>
+            <lens>Pentax 135 mm f2.799999952316284</lens>
+            <lens>Pentax 360 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Deetta Beausoleil" primary-camera="Canon 60D">
+        <lenses>
+            <lens>Canon 11 mm f3.5</lens>
+            <lens>Canon 24 mm f3.5</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Keely Futrell" primary-camera="Pentax K-5 II">
+        <lenses>
+            <lens>Pentax 600 mm f4.0</lens>
+            <lens>Pentax 14 mm f2.799999952316284</lens>
+            <lens>Pentax 16 mm f2.799999952316284</lens>
+            <lens>Pentax 360 mm f4.0</lens>
+            <lens>Pentax 200 mm f4.0</lens>
+            <lens>Pentax 135 mm f2.799999952316284</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Lajuana Mcclean" primary-camera="Nikon D4">
+        <lenses>
+            <lens>Tokina 200 mm f2.799999952316284</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Gena Gering" primary-camera="Canon 5D Mk II">
+        <lenses>
+            <lens>Canon 1000 mm f2.4000000953674316</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Melodee Shepler" primary-camera="Nikon D600">
+        <lenses>
+            <lens>Nikon 55 mm f2.799999952316284</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Keely Futrell" primary-camera="Pentax K-5 II">
+        <lenses>
+            <lens>Pentax 14 mm f2.799999952316284</lens>
+            <lens>Pentax 200 mm f4.0</lens>
+            <lens>Pentax 360 mm f4.0</lens>
+            <lens>Pentax 16 mm f2.799999952316284</lens>
+            <lens>Pentax 135 mm f2.799999952316284</lens>
+            <lens>Pentax 600 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Keely Futrell" primary-camera="Pentax K-5 II">
+        <lenses>
+            <lens>Pentax 16 mm f2.799999952316284</lens>
+            <lens>Pentax 135 mm f2.799999952316284</lens>
+            <lens>Pentax 600 mm f4.0</lens>
+            <lens>Pentax 200 mm f4.0</lens>
+            <lens>Pentax 14 mm f2.799999952316284</lens>
+            <lens>Pentax 360 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Stephnie Arciniega" primary-camera="Pentax K-01">
+        <lenses>
+            <lens>Tokina 20 mm f2.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Dinah Mckenney" primary-camera="Fuji XE2s">
+        <lenses>
+            <lens>Tamron 24 mm f1.7999999523162842</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Mckenzie Monteiro" primary-camera="Nikon D300S">
+        <lenses>
+            <lens>Nikon 30 mm f2.0</lens>
+            <lens>Tokina 135 mm f2.799999952316284</lens>
+            <lens>Nikon 28 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Mckenzie Monteiro" primary-camera="Nikon D300S">
+        <lenses>
+            <lens>Tokina 135 mm f2.799999952316284</lens>
+            <lens>Nikon 30 mm f2.0</lens>
+            <lens>Nikon 28 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Antonetta Gano" primary-camera="Canon 60D">
+        <lenses>
+            <lens>Sigma 24 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Wilfredo Finnegan" primary-camera="Nikon D40">
+        <lenses>
+            <lens>Tokina 135 mm f2.799999952316284</lens>
+            <lens>Nikon 200 mm f2.799999952316284</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Keely Futrell" primary-camera="Pentax K-5 II">
+        <lenses>
+            <lens>Pentax 14 mm f2.799999952316284</lens>
+            <lens>Pentax 600 mm f4.0</lens>
+            <lens>Pentax 16 mm f2.799999952316284</lens>
+            <lens>Pentax 135 mm f2.799999952316284</lens>
+            <lens>Pentax 360 mm f4.0</lens>
+            <lens>Pentax 200 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Mckenzie Monteiro" primary-camera="Nikon D300S">
+        <lenses>
+            <lens>Tokina 135 mm f2.799999952316284</lens>
+            <lens>Nikon 30 mm f2.0</lens>
+            <lens>Nikon 28 mm f4.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Harley Gerardo" primary-camera="Canon 40D">
+        <lenses>
+            <lens>Tokina 20 mm f2.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Joane Claflin" primary-camera="Nikon D3X">
+        <lenses>
+            <lens>Nikon 29 mm f2.0</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Cristopher Brinkerhoff" primary-camera="Canon 7D Mk II">
+        <lenses>
+            <lens>Sigma 10 mm f1.399999976158142</lens>
+        </lenses>
+    </photographer>
+    <photographer name="Lucina Jesse" primary-camera="Nikon D750">
+        <lenses>
+            <lens>Nikon 15 mm f4.0</lens>
+        </lenses>
+    </photographer>
+</photographers>
