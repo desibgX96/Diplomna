@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.validation.constraints.Null;
 
 
 @Entity
@@ -44,31 +45,19 @@ public class Details implements Serializable{
 	@Basic
 	@Column(name = "TEXT_OF_ENTRY")
 	String textOfEntry;
-	
+
 	@Basic
-	@Column(name = "ITEM_CLASS")
-	short itemClass;
-	
-	@Basic
-	@Column(name = "CREATED_ON")
+	@Column(name = "CREATED_ON",nullable = true)
 	private Date createdOn;
 	
 	@Basic
-	@Column(name = "CHANGED_ON")
+	@Column(name = "CHANGED_ON",nullable = true)
 	private Date changedOn;
-	
+	/*
 	@Basic
 	@Column(name = "LINE_TYPE")
 	String lineType;
-
-	public short getItemClass() {
-		return itemClass;
-	}
-
-	public void setItemClass(short itemClass) {
-		this.itemClass = itemClass;
-	}
-
+*/
 	public Date getCreatedOn() {
 		return createdOn;
 	}
@@ -84,7 +73,7 @@ public class Details implements Serializable{
 	public void setChangedOn(Date changedOn) {
 		this.changedOn = changedOn;
 	}
-
+/*
 	public String getLineType() {
 		return lineType;
 	}
@@ -92,7 +81,7 @@ public class Details implements Serializable{
 	public void setLineType(String lineType) {
 		this.lineType = lineType;
 	}
-
+*/
 	public CompositeKey getDetailsKey() {
 		return detailsKey;
 	}

@@ -72,15 +72,15 @@ public class Header {
 	private Date createdOn;
 	
 	@Basic
-	@Column(name = "CHANGED_ON")
+	@Column(name = "CHANGED_ON",nullable = true)
 	private Date changededOn;
 	
 	@Basic
-	@Column(name = "CREATED_BY")
+	@Column(name = "CREATED_BY",nullable = true)
 	private short createdBy;
 	
 	@Basic
-	@Column(name = "CHANGED_BY")
+	@Column(name = "CHANGED_BY",nullable = true)
 	private short changedBy;
 	
 	@Basic
