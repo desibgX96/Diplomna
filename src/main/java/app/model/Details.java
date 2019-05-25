@@ -16,17 +16,7 @@ import javax.validation.constraints.Null;
 //@IdClass(CompositeKey.class)
 @Table(name = "acc_detail")
 public class Details implements Serializable{
-	/*          https://stackoverflow.com/questions/40058001/error-creating-bean-with-name-entitymanagerfactory-defined-in-class-path-resou
-	@Id
-	@NotNull
-	@ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-	@JoinColumn(name = "ACC_HEADER_ID")
-	Header accHeaderId;
-	
-	@Id
-	@NotNull
-	int line;
-	*/
+
 	@EmbeddedId 
 	CompositeKey detailsKey;
 	
@@ -53,11 +43,7 @@ public class Details implements Serializable{
 	@Basic
 	@Column(name = "CHANGED_ON",nullable = true)
 	private Date changedOn;
-	/*
-	@Basic
-	@Column(name = "LINE_TYPE")
-	String lineType;
-*/
+
 	public Date getCreatedOn() {
 		return createdOn;
 	}
@@ -73,15 +59,7 @@ public class Details implements Serializable{
 	public void setChangedOn(Date changedOn) {
 		this.changedOn = changedOn;
 	}
-/*
-	public String getLineType() {
-		return lineType;
-	}
 
-	public void setLineType(String lineType) {
-		this.lineType = lineType;
-	}
-*/
 	public CompositeKey getDetailsKey() {
 		return detailsKey;
 	}
