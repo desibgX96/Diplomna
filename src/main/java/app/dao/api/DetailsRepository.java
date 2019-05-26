@@ -11,8 +11,11 @@ import app.model.Details;
 @Repository
 public interface DetailsRepository extends JpaRepository< Details, Integer> {	
 	
-	@Query("Select d from Details as d where d.credit LIKE '4531'  AND d.debit NOT LIKE '4532' OR d.debit NOT LIKE '4538'")
+	@Query("Select d from Details as d inner join d.detailsKey as h where d.credit LIKE '%4531%' AND NOT (d.debit LIKE '%4532%' OR d.debit LIKE '%4538%')")
 	List<Details> findDDSMistake();
+	
+	@Query("Select d from Details as d inner join d.detailsKey as h where d.debit LIKE '%4532%' AND NOT (d.credit LIKE '%4531%' OR d.credit LIKE '%4539%')")
+	List<Details> findDDSMistake2();
 	/*
 	//List<Photographer> findAllOrderByFirstNameAscLastNameDesc();
 	

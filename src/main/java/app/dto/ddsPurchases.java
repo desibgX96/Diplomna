@@ -15,7 +15,7 @@ import app.model.Header;
 public class ddsPurchases implements Serializable {
 	@XmlTransient
 	@Expose
-	Header accHeaderId;
+	ddsPurchases2 accHeaderId;
 
 	@XmlTransient
 	@Expose
@@ -37,11 +37,11 @@ public class ddsPurchases implements Serializable {
 	@Expose
 	String textOfEntry;
 
-	public Header getAccHeaderId() {
+	public ddsPurchases2 getAccHeaderId() {
 		return accHeaderId;
 	}
 
-	public void setAccHeaderId(Header accHeaderId) {
+	public void setAccHeaderId(ddsPurchases2 accHeaderId) {
 		this.accHeaderId = accHeaderId;
 	}
 

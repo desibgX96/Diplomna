@@ -9,4 +9,6 @@ public interface DetailsServiseInterface {
 	public void save( Details object) ;
 
 	List<Details> findDDSMistakenEntry();
+	
+	List<Details> findDDSMistakenSale();
 }

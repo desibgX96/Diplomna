@@ -19,7 +19,6 @@ public class CompositeKey implements Serializable{
 	@NotNull
 	@ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
 	@JoinColumn(name = "ACC_HEADER_ID")
-	//@Column(name = "ACC_HEADER_ID")
     private Header accHeaderId;
 	
 	@NotNull

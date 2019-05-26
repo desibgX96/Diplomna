@@ -54,7 +54,8 @@ public class ConsoleRunner implements CommandLineRunner {
 	public void run(String... strings) throws Exception {
 
 		EventsDemoPanel2 window = new EventsDemoPanel2();
-		 //exportDDSMistakenEntrys();
+		 exportDDSMistakenEntrys();
+		 exportDDSMistakenSales();
 	}
 	
 	
@@ -62,6 +63,12 @@ public class ConsoleRunner implements CommandLineRunner {
 		 List<Details> details = detailsService.findDDSMistakenEntry();
 		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/dds-mistake.json");
+	 }
+		
+	 private void exportDDSMistakenSales() {
+		 List<Details> details = detailsService. findDDSMistakenSale();
+		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/dds-mistake2.json");
 	 }
 	
 }

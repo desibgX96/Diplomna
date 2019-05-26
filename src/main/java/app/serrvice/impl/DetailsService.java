@@ -23,6 +23,11 @@ public class DetailsService implements DetailsServiseInterface {
 	 public List<Details> findDDSMistakenEntry() {
 	 return detailsRepository.findDDSMistake();
 	 }
+	 
+	 @Override
+	 public List<Details> findDDSMistakenSale() {
+	 return detailsRepository.findDDSMistake();
+	 }
 
 	@Override
 	public void save(Details object) {
