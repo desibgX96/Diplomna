@@ -1,9 +1,37 @@
 [
   {
     "line": 0,
-    "debit": "4111",
-    "credit": "4531",
-    "amount": 24.71,
+    "debit": "4532",
+    "credit": "4011",
+    "amount": 10740.00,
+    "textOfEntry": "Покупка на стока"
+  },
+  {
+    "line": 0,
+    "debit": "4532",
+    "credit": "702",
+    "amount": 34.96,
     "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "line": 0,
+    "debit": "4532",
+    "credit": "4111",
+    "amount": 29.65,
+    "textOfEntry": ""
+  },
+  {
+    "line": 0,
+    "debit": "4532",
+    "credit": "4532",
+    "amount": 9.17,
+    "textOfEntry": "ДДС при продажба"
+  },
+  {
+    "line": 0,
+    "debit": "4532",
+    "credit": "4111",
+    "amount": 4.94,
+    "textOfEntry": "ДДС при продажба"
   }
 ]

@@ -19,6 +19,13 @@ public class DetailsService implements DetailsServiseInterface {
 	@Autowired
 	private DetailsRepository detailsRepository;
 	
+
+	@Override
+	public void save(Details object) {
+		detailsRepository.save(object);
+		
+	}
+	
 	 @Override
 	 public List<Details> findDDSMistakenEntry() {
 	 return detailsRepository.findDDSMistake();
@@ -26,13 +33,29 @@ public class DetailsService implements DetailsServiseInterface {
 	 
 	 @Override
 	 public List<Details> findDDSMistakenSale() {
-	 return detailsRepository.findDDSMistake();
+	 return detailsRepository.findDDSMistake2();
 	 }
-
-	@Override
-	public void save(Details object) {
-		detailsRepository.save(object);
+	
 		
-	}
+	 @Override
+	 public List<Details> findMistakeInCostAccounts() {
+	 return detailsRepository.findCostAccounts();
+	 }
+	 
+	 @Override
+	 public List<Details> findMistakeInUnitCosts() {
+	 return detailsRepository.findUnitCosts();
+	 }
+	
+		
+	 @Override
+	 public List<Details> findMistakeInExpensesMaterialAccounts() {
+	 return detailsRepository.findExpensesMaterialAccounts();
+	 }
+	 
+	 @Override
+	 public List<Details> findMistakeInSaleAccount() {
+	 return detailsRepository.findSaleAccount();
+	 }
 	
 }

@@ -1,16 +1,20 @@
 package app;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -18,8 +22,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.WindowConstants;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -32,41 +38,96 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class App 
 {
 	
-	static JFrame mainFrame = new JFrame();
+	static JFrame mainFrame = new JFrame("Login");
 	
     public static void main( String[] args )
     {
-    	//JFrame mainFrame = new JFrame();
-		mainFrame.setSize(new Dimension(500,500));
-		mainFrame.setTitle("Login Window");
-		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		JPanel panel1 = new EventsDemoPanel();
-		BoxLayout vertical = new BoxLayout(panel1,BoxLayout.Y_AXIS);
-		panel1.setLayout(vertical);
-		panel1.setBackground(Color.LIGHT_GRAY);
-		mainFrame.add(panel1);
-		mainFrame.setVisible(true);
+    	 mainFrame = new JFrame("Login");
+    	 App log = new App();
+         mainFrame.getContentPane().add(log.new LoginPanel());
+         mainFrame.setResizable(false);
+         mainFrame.getContentPane().setBackground(Color.BLACK);
+         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         mainFrame.setLocationRelativeTo(null);
+         mainFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
+         mainFrame.pack();
+         mainFrame.setLocationRelativeTo(null);
+         mainFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+
+         mainFrame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+               System.exit(0);
+            }
+         });
+         mainFrame.setVisible(true);
 		
     	//SpringApplication.run(App.class, args);
     }
     
-    private static class EventsDemoPanel extends JPanel {
-		private JTextField userName = createInputField();
-		private JTextField userPass = createInputField();
-		private JLabel userNameL = new JLabel("User Name:");
-		private JLabel passwordL = new JLabel("Password:");
-		private JButton login = new JButton();
+    final class LoginPanel extends JPanel {
 
-		public EventsDemoPanel() {
+    	   private final JLabel jlblUsername = new JLabel("Username:");
+    	   private final JLabel jlblPassword = new JLabel("Password:");
 
-			login.setText("Login");
-			login.addActionListener(new ActionListener() {
+    	   private final JTextField jtfUsername = new JTextField(15);
+    	   private final JPasswordField jpfPassword = new JPasswordField(15);
 
-				@Override
-				public void actionPerformed(ActionEvent e) { 
-					 String name = userName.getText(); 
-					 String pass = userPass.getText(); 
+    	   private final JButton jbtOk = new JButton("Login");
+    	   private final JButton jbtCancel = new JButton("Cancel");
+
+    	   private final JLabel jlblStatus = new JLabel(" ");
+
+    	   public LoginPanel() {
+    	      JPanel inputsPanel = new JPanel();
+
+    	      BoxLayout boxLayout = new BoxLayout(inputsPanel, BoxLayout.X_AXIS);
+    	      inputsPanel.setLayout(boxLayout);
+
+    	      JPanel labelsPanel = new JPanel();
+    	      BoxLayout labelsLayout = new BoxLayout(labelsPanel, BoxLayout.Y_AXIS);
+    	      labelsPanel.setLayout(labelsLayout);
+    	      jlblUsername.setAlignmentX(1);
+    	      labelsPanel.add(jlblUsername);
+    	      labelsPanel.add(Box.createRigidArea(new Dimension(0, 10)));
+    	      jlblPassword.setAlignmentX(1);
+    	      labelsPanel.add(jlblPassword);
+    	      inputsPanel.add(Box.createRigidArea(new Dimension(40, 0)));
+    	      inputsPanel.add(labelsPanel);
+    	      inputsPanel.add(Box.createRigidArea(new Dimension(10, 0)));
+
+    	      JPanel textFiledsPanel = new JPanel();
+    	      BoxLayout textFieldLaout = new BoxLayout(textFiledsPanel, BoxLayout.Y_AXIS);
+    	      textFiledsPanel.setLayout(textFieldLaout);
+    	      textFiledsPanel.add(jtfUsername);
+    	      textFiledsPanel.add(jpfPassword);
+
+    	      inputsPanel.add(textFiledsPanel);
+    	      inputsPanel.add(Box.createRigidArea(new Dimension(40, 0)));
+
+    	      JPanel buttonsPanel = new JPanel();
+    	      buttonsPanel.add(jbtOk);
+    	      buttonsPanel.add(jbtCancel);
+
+    	      JPanel southPanel = new JPanel(new BorderLayout());
+    	      southPanel.add(buttonsPanel, BorderLayout.CENTER);
+    	      southPanel.add(jlblStatus, BorderLayout.NORTH);
+    	      jlblStatus.setForeground(Color.RED);
+    	      jlblStatus.setHorizontalAlignment(SwingConstants.CENTER);
+
+    	      setMinimumSize(new Dimension(400, 120));
+    	      JPanel mainPanel = new JPanel(new GridLayout(2, 1, 5, 5));
+    	      mainPanel.setBorder(BorderFactory.createEtchedBorder());
+    	      mainPanel.add(inputsPanel);
+    	      mainPanel.add(southPanel);
+    	      add(mainPanel);
+
+    	      jbtOk.addActionListener(new ActionListener() {
+    	         @Override
+    	         public void actionPerformed(ActionEvent e) {
+    	        	 String name = jtfUsername.getText(); 
+					 String pass = jpfPassword.getText(); 
 					 File file = new File("E:\\diplomna\\Pass.txt"); 
 					  
 					  BufferedReader br;
@@ -93,40 +154,14 @@ public class App
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					} 
-
-				}
-			});
-			JPanel helpFields = new JPanel();
-			GridLayout contain = new GridLayout(0,2);
-			helpFields.setLayout(contain);
-			
-			//add(Box.createRigidArea(new Dimension(50,20)));
-			JPanel helpPanel = new JPanel();
-			helpPanel.add(Box.createRigidArea(new Dimension(0,190)));
-			helpPanel.add(userName);
-			userNameL.setHorizontalAlignment(SwingConstants.RIGHT);
-			helpFields.add(userNameL);
-			helpFields.add(helpPanel);
-			
-			//add(Box.createRigidArea(new Dimension(20,10)));
-			JPanel helpPanel1 = new JPanel();
-			helpPanel1.add(Box.createRigidArea(new Dimension(0,190)));
-			helpPanel1.add(userPass);
-			passwordL.setHorizontalAlignment(SwingConstants.RIGHT);
-			helpFields.add(passwordL);
-			helpFields.add(helpPanel1);
-			add(helpFields);
-			//add(Box.createRigidArea(new Dimension(100,50)));
-			JPanel helpPanel2 = new JPanel();
-			helpPanel2.add(login);
-			add(helpPanel2);
-			
-		}
-		
-		private JTextField createInputField() {
-			JTextField inputText = new JTextField(15);
-			inputText.setVisible(true); 
-			return inputText;
-		}
-	}
+    	         }
+    	      });
+    	      jbtCancel.addActionListener(new ActionListener() {
+    	         @Override
+    	         public void actionPerformed(ActionEvent e) {
+    	        	 mainFrame.setVisible(false);
+    	         }
+    	      });
+    	   }
+    	}
 }

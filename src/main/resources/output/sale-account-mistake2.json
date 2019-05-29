@@ -1,0 +1,86 @@
+[
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "702",
+    "amount": 188.67,
+    "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "line": 0,
+    "debit": "701",
+    "credit": "4111",
+    "amount": 168.00,
+    "textOfEntry": "Плащане"
+  },
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "4111",
+    "amount": 45.83,
+    "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "123",
+    "amount": 262663.51,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "703",
+    "credit": "123",
+    "amount": 150.00,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "123",
+    "amount": 287803.69,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "123",
+    "amount": 241263.50,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "703",
+    "credit": "123",
+    "amount": 402.83,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "703",
+    "credit": "123",
+    "amount": 305.00,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "602",
+    "amount": 19.93,
+    "textOfEntry": "Себстойност"
+  },
+  {
+    "line": 0,
+    "debit": "709",
+    "credit": "123",
+    "amount": 12552.81,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "709",
+    "credit": "123",
+    "amount": 78.23,
+    "textOfEntry": "годишно приключване"
+  }
+]

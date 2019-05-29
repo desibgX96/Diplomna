@@ -1,0 +1,156 @@
+[
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "603",
+    "amount": 37184.13,
+    "textOfEntry": "ГОДИШНО ПРИКЛ."
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "601",
+    "amount": 52864.71,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "603",
+    "amount": 43986.97,
+    "textOfEntry": "ГОДИШНО ПРИКЛ."
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "602",
+    "amount": 26028.29,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "605",
+    "amount": 13332.36,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "702",
+    "credit": "602",
+    "amount": 19.93,
+    "textOfEntry": "Себстойност"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "604",
+    "amount": 86471.70,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "4111",
+    "credit": "609",
+    "amount": 35.83,
+    "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "604",
+    "amount": 74513.53,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "609",
+    "amount": 9567.38,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "603",
+    "amount": 42950.21,
+    "textOfEntry": "ГОДИШНО ПРИКЛ."
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "601",
+    "amount": 45906.26,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "501",
+    "credit": "602",
+    "amount": 17.00,
+    "textOfEntry": ""
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "604",
+    "amount": 68133.40,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "602",
+    "amount": 32345.82,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "605",
+    "amount": 13257.67,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "602",
+    "amount": 35252.23,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "609",
+    "amount": 4418.90,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "609",
+    "amount": 146.93,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "5031",
+    "credit": "601",
+    "amount": 60.00,
+    "textOfEntry": "Плащане"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "601",
+    "amount": 48383.41,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "line": 0,
+    "debit": "123",
+    "credit": "605",
+    "amount": 13342.65,
+    "textOfEntry": "годишно приключване"
+  }
+]

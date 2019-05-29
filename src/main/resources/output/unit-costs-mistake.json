@@ -1,0 +1,16 @@
+[
+  {
+    "line": 0,
+    "debit": "4111",
+    "credit": "611",
+    "amount": 7.17,
+    "textOfEntry": "ДДС при продажба"
+  },
+  {
+    "line": 0,
+    "debit": "501",
+    "credit": "611",
+    "amount": 60.00,
+    "textOfEntry": ""
+  }
+]

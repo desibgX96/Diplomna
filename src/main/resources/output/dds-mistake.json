@@ -3,7 +3,28 @@
     "line": 0,
     "debit": "4111",
     "credit": "4531",
+    "amount": 10.00,
+    "textOfEntry": "ДДС при продажба"
+  },
+  {
+    "line": 0,
+    "debit": "4111",
+    "credit": "4531",
+    "amount": 6.99,
+    "textOfEntry": "ДДС при продажба"
+  },
+  {
+    "line": 0,
+    "debit": "4111",
+    "credit": "4531",
     "amount": 24.71,
     "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "line": 0,
+    "debit": "4011",
+    "credit": "4531",
+    "amount": 2148.00,
+    "textOfEntry": "ДДС на покупките"
   }
 ]

@@ -2,7 +2,6 @@ package app;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,10 +10,12 @@ import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableModel;
 
 class EventsDemoPanel2 extends JFrame {
@@ -27,17 +28,26 @@ class EventsDemoPanel2 extends JFrame {
 	private JRadioButton proverka3 = new JRadioButton();
 	private JRadioButton proverka4 = new JRadioButton();
 	private JRadioButton proverka5 = new JRadioButton();
+	private JRadioButton proverka6 = new JRadioButton();
 	//https://www.youtube.com/watch?v=iOV_oaJhABQ
-	private JComboBox period1Date = new JComboBox();
+	private JLabel beginPeriod = new JLabel("From: ");
+	private JLabel endPeriod = new JLabel("To: ");
+	private JComboBox<String> period1Year = new JComboBox<String>();
+	private JComboBox<String> period1Month = new JComboBox<String>();
+	private JComboBox<String> period1Day = new JComboBox<String>();
+	private JComboBox<String> period2Year = new JComboBox<String>();
+	private JComboBox<String> period2Month = new JComboBox<String>();
+	private JComboBox<String> period2Day = new JComboBox<String>();
 	private JButton proverka = new JButton();
     JTable table = new JTable();
 	
 	public EventsDemoPanel2() {
-		proverka1.setText("DDSERROR");
-		proverka2.setText("DDSERROR2");
-		proverka3.setText("DDSERROR3");
-		proverka4.setText("DDSERROR4");
-		proverka5.setText("DDSERROR5");
+		proverka1.setText("DDSMistakenEntrys");
+		proverka2.setText("DDSMistakenSales");
+		proverka3.setText("MistakeInCostAccounts");
+		proverka4.setText("MistakeInUnitCosts");
+		proverka5.setText("MistakeInExpensesMaterialAccounts");
+		proverka6.setText("MistakeInSaleAccount");
 		proverka.setText("Start data extraction");
 		
 		JPanel radioButtons = new JPanel();
@@ -48,16 +58,44 @@ class EventsDemoPanel2 extends JFrame {
 		radioButtons.add(proverka3);
 		radioButtons.add(proverka4);
 		radioButtons.add(proverka5);
+		radioButtons.add(proverka6);
 		panel1.setLayout(vertical);
 		panel1.setBackground(Color.LIGHT_GRAY);
 		panel1.add(radioButtons);
 		
+		JPanel search1Dates = new JPanel();
+		BoxLayout sd1Horizontal = new BoxLayout(search1Dates,BoxLayout.X_AXIS);
 		String[] datesDay = {"--","01","02","03","04","05","06","07","08","09","10",
 							"11","12","13","14","15","16","17","18","19","20",
 							"21","22","23","24","25","26","27","28","29","30","31"};
+		for(int i = 0; i<datesDay.length;i++ ) {
+			period1Day.addItem(datesDay[i]);
+			period2Day.addItem(datesDay[i]);
+		}
 		String[] datesMounth = {"--","01","02","03","04","05","06","07","08","09","10","11","12"};
-		
+		for(int i = 0; i<datesMounth.length;i++ ) {
+			period1Month.addItem(datesMounth[i]);
+			period2Month.addItem(datesMounth[i]);
+		}
 		String[] datesYear = {"----","2015","2016","2017","2018"};
+		for(int i = 0; i<datesYear.length;i++ ) {
+			period1Year.addItem(datesYear[i]);
+			period2Year.addItem(datesYear[i]);
+		}
+		search1Dates.add(beginPeriod);
+		search1Dates.add(period1Year);
+		search1Dates.add(period1Month);
+		search1Dates.add(period1Day);
+		panel1.add(search1Dates);
+		
+		JPanel search2Dates = new JPanel();
+		BoxLayout sd2Horizontal = new BoxLayout(search2Dates,BoxLayout.X_AXIS);
+		search2Dates.add(endPeriod);
+		search2Dates.add(period2Year);
+		search2Dates.add(period2Month);
+		search2Dates.add(period2Day);
+		panel1.add(search2Dates);
+		
 		
 		JPanel buttonFunc = new JPanel();
 		BoxLayout bHorizontal = new BoxLayout(buttonFunc,BoxLayout.X_AXIS);
@@ -68,17 +106,19 @@ class EventsDemoPanel2 extends JFrame {
 //https://www.youtube.com/watch?v=22MBsRYuM4Q
 	        JPanel tablePanel = new JPanel();
 	        tablePanel.setLayout(new BorderLayout());
-	        Object[] colums = {"id","cr","db","sm"};
-	     JTable table = new JTable();
-	     DefaultTableModel model = new DefaultTableModel();
-	     model.setColumnIdentifiers(colums);
-	     table.setModel(model);
-	     Object[] o = new Object[4];
-	     o[0] = "aaaa";
-	     o[1] = "bbbb";
-	     o[2] = "cccc";
-	     o[3] = "dddd";
-	     model.addRow(o);
+	        final Object[] colums = {"line","debit","credit","amount","textOfEntry"};
+	        DefaultTableModel modelN = new DefaultTableModel();
+		    
+		     modelN.setColumnIdentifiers(colums);
+		     table.setModel(modelN);
+		     Object[] o = new Object[5];
+		     o[0] = "aaaa";
+		     o[1] = "aaaa";
+		     o[2] = "aaaa";
+		     o[3] = "aaaa";
+		     o[4] = "aaaa";
+		     modelN.addRow(o);
+
 
 	        JScrollPane tableContainer = new JScrollPane(table);
 	        tablePanel.add(tableContainer, BorderLayout.CENTER);
@@ -88,7 +128,43 @@ class EventsDemoPanel2 extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) { 
+				 JTable table = new JTable();
+			     DefaultTableModel model = new DefaultTableModel();
+			    
+			     model.setColumnIdentifiers(colums);
+			     table.setModel(model);
 				
+				if(proverka1.isSelected()) {
+					//ConsoleRunner cr = new ConsoleRunner();
+					//Set<ddsPurchases> tableSet = cr.exportDDSMistakenEntrys();
+					//for (ddsPurchases s : tableSet) {
+				     Object[] o = new Object[5];
+				     o[0] = "bbbb";//s.getLine();
+				     o[1] = "bbbb";//s.getDebit();
+				     o[2] = "bbbb";//s.getCredit();
+				     o[3] = "bbbb";//s.getAmount();
+				     o[4] = "bbbb";//s.getTextOfEntry();
+				     model.addRow(o);
+
+					//}
+				}
+				
+				if(proverka2.isSelected()) {
+					
+				}
+				if(proverka3.isSelected()) {
+	
+				}
+				if(proverka4.isSelected()) {
+	
+				}
+				if(proverka5.isSelected()) {
+	
+				}
+				if(proverka6.isSelected()) {
+					
+				}
+				table.tableChanged(new TableModelEvent(model));
 			}
 				
 		});

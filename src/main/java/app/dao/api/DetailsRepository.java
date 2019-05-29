@@ -16,15 +16,17 @@ public interface DetailsRepository extends JpaRepository< Details, Integer> {
 	
 	@Query("Select d from Details as d inner join d.detailsKey as h where d.debit LIKE '%4532%' AND NOT (d.credit LIKE '%4531%' OR d.credit LIKE '%4539%')")
 	List<Details> findDDSMistake2();
-	/*
-	//List<Photographer> findAllOrderByFirstNameAscLastNameDesc();
 	
-	//@Query("Select firstName,lastName,primaryCamera,COUNT(l.lenses) from Photographer as p inner join p.Lens as l where p.id = l.owner.id, p.primaryCamera LIKE 'DSLR' AND l.focalLength<=30 ORDER BY firstName")
-	@Query("Select p from Photographer as p  inner join p.primaryCamera as c  where c.maxShutterSpeed IS NOT NULL ORDER BY p.firstName")
-     List<Details> findPhotographer2();
+	@Query("Select d from Details as d inner join d.detailsKey as h where d.credit LIKE '%60%' AND NOT (d.debit LIKE '%61%')")
+	List<Details> findCostAccounts();
 	
-	@Query("Select p from Photographer as p inner join p.primaryCamera as pc inner join p.secondaryCamera as sc inner join p.lenses as l where pc.make LIKE sc.make  AND l IS NOT NULL")
-    List<Details> findPhotographer3();
+	@Query("Select d from Details as d inner join d.detailsKey as h where d.credit LIKE '%61%' AND NOT (d.debit LIKE '%70%')")
+	List<Details> findUnitCosts();
 	
-	Details findByFirstNameAndLastName(String fn,String ln);*/
+	@Query("Select d from Details as d inner join d.detailsKey as h where d.credit LIKE '%30%' AND NOT (d.debit LIKE '%70%' OR d.debit LIKE '%60%')")
+	List<Details> findExpensesMaterialAccounts();
+	
+	@Query("Select d from Details as d inner join d.detailsKey as h where d.debit LIKE '%70%' AND NOT (d.credit LIKE '%20%' OR d.credit LIKE '%30%' OR d.credit LIKE '%61%')")
+	List<Details> findSaleAccount();
+
 }

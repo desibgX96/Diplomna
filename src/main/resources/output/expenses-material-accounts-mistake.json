@@ -1,0 +1,51 @@
+[
+  {
+    "line": 0,
+    "debit": "501",
+    "credit": "304",
+    "amount": 86717.12,
+    "textOfEntry": "брак"
+  },
+  {
+    "line": 0,
+    "debit": "4111",
+    "credit": "304",
+    "amount": 32.05,
+    "textOfEntry": "Себстойност"
+  },
+  {
+    "line": 0,
+    "debit": "501",
+    "credit": "304",
+    "amount": 9513.51,
+    "textOfEntry": "брак"
+  },
+  {
+    "line": 0,
+    "debit": "699",
+    "credit": "304",
+    "amount": 2921.48,
+    "textOfEntry": "брак"
+  },
+  {
+    "line": 0,
+    "debit": "501",
+    "credit": "304",
+    "amount": 31.84,
+    "textOfEntry": "Себстойност"
+  },
+  {
+    "line": 0,
+    "debit": "4111",
+    "credit": "302",
+    "amount": 50.00,
+    "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "line": 0,
+    "debit": "4011",
+    "credit": "304",
+    "amount": 31.78,
+    "textOfEntry": "Себстойност"
+  }
+]
