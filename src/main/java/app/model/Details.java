@@ -5,20 +5,37 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Null;
+import javax.validation.constraints.NotNull;
 
 
 @Entity
-//@IdClass(CompositeKey.class)
 @Table(name = "acc_detail")
 public class Details implements Serializable{
 
-	@EmbeddedId 
-	CompositeKey detailsKey;
+	@Id
+	@Column(name = "ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	
+	@NotNull
+	@ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+	@JoinColumn(name = "ACC_HEADER_ID")
+    private Header accHeaderId;
+	
+	@NotNull
+	@Column(name = "LINE")
+    private int line;
+    
 	
 	@Basic
 	@Column(name = "DEBIT")
@@ -60,12 +77,28 @@ public class Details implements Serializable{
 		this.changedOn = changedOn;
 	}
 
-	public CompositeKey getDetailsKey() {
-		return detailsKey;
+	public int getId() {
+		return id;
 	}
 
-	public void setDetailsKey(CompositeKey detailsKey) {
-		this.detailsKey = detailsKey;
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Header getAccHeaderId() {
+		return accHeaderId;
+	}
+
+	public void setAccHeaderId(Header accHeaderId) {
+		this.accHeaderId = accHeaderId;
+	}
+
+	public int getLine() {
+		return line;
+	}
+
+	public void setLine(int line) {
+		this.line = line;
 	}
 
 	public String getDebit() {

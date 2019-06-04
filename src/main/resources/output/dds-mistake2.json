@@ -1,37 +1,77 @@
 [
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 33.0,
+      "journalNumber": 410.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0200000001",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "ЕТ Димитър Никлин"
+    },
+    "line": 2,
     "debit": "4532",
-    "credit": "4011",
-    "amount": 10740.00,
-    "textOfEntry": "Покупка на стока"
+    "credit": "4111",
+    "amount": 4.94,
+    "textOfEntry": "ДДС при продажба"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 438.0,
+      "journalNumber": 663.0,
+      "period": "Jan 15, 2015 12:00:00 AM",
+      "docNr": "0300000022",
+      "docDate": "Jan 15, 2015 12:00:00 AM",
+      "refName": "АЛХАТ ЕООД"
+    },
+    "line": 1,
     "debit": "4532",
     "credit": "702",
     "amount": 34.96,
     "textOfEntry": "Продажба на стоки"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 41.0,
+      "journalNumber": 410.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "100206",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "ЕТ Димитър Никлин"
+    },
+    "line": 1,
     "debit": "4532",
     "credit": "4111",
     "amount": 29.65,
     "textOfEntry": ""
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 37.0,
+      "journalNumber": 414.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0000005420",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "Генара ООД"
+    },
+    "line": 1,
+    "debit": "4532",
+    "credit": "4011",
+    "amount": 10740.00,
+    "textOfEntry": "Покупка на стока"
+  },
+  {
+    "accHeaderId": {
+      "id": 35.0,
+      "journalNumber": 412.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0200000002",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "Съни Дриймс 1 ООД"
+    },
+    "line": 2,
     "debit": "4532",
     "credit": "4532",
     "amount": 9.17,
-    "textOfEntry": "ДДС при продажба"
-  },
-  {
-    "line": 0,
-    "debit": "4532",
-    "credit": "4111",
-    "amount": 4.94,
     "textOfEntry": "ДДС при продажба"
   }
 ]

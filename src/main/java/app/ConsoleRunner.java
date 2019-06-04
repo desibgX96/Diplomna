@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Controller;
 
-import app.dto.ddsPurchases;
+import app.dto.DDSPurchases;
 import app.model.Details;
 import app.serialize.api.Seriaizer;
 import app.service.api.DetailsServiseInterface;
@@ -32,50 +32,55 @@ public class ConsoleRunner implements CommandLineRunner {
 	@Override
 	public void run(String... strings) throws Exception {
 
-		EventsDemoPanel2 window = new EventsDemoPanel2();
-		// exportDDSMistakenEntrys();
-		 exportDDSMistakenSales();
-		 exportMistakeInCostAccounts();
-		 exportMistakeInUnitCosts() ;
-		 exportMistakeInExpensesMaterialAccounts();
-		 exportMistakeInSaleAccount();
+		EventsDemoPanel2 window = new EventsDemoPanel2(this);
+		 //exportDDSMistakenEntrys();
+		//exportDDSMistakenSales();
+		 //exportMistakeInCostAccounts();
+		// exportMistakeInUnitCosts() ;
+		// exportMistakeInExpensesMaterialAccounts();
+		// exportMistakeInSaleAccount();
 	}
 	
 	
-	 public Set<ddsPurchases> exportDDSMistakenEntrys() {
+	 public Set<DDSPurchases> exportDDSMistakenEntrys() {
 		 List<Details> details = detailsService.findDDSMistakenEntry();
-		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 Set<DDSPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,DDSPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/dds-mistake.json");
 		 return photogtaphetsDTOs;
 	 }
 		
-	 private void exportDDSMistakenSales() {
+	 public Set<DDSPurchases> exportDDSMistakenSales() {
 		 List<Details> details = detailsService. findDDSMistakenSale();
-		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 Set<DDSPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,DDSPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/dds-mistake2.json");
+		 return photogtaphetsDTOs;
 	 }
 	
-	 private void exportMistakeInCostAccounts() {
+	 public Set<DDSPurchases> exportMistakeInCostAccounts() {
 		 List<Details> details = detailsService.findMistakeInCostAccounts();
-		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 Set<DDSPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,DDSPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/cost-accounts-mistake.json");
+		 return photogtaphetsDTOs;
 	 }
 		
-	 private void exportMistakeInUnitCosts() {
+	 public Set<DDSPurchases> exportMistakeInUnitCosts() {
 		 List<Details> details = detailsService. findMistakeInUnitCosts();
-		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 Set<DDSPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,DDSPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/unit-costs-mistake.json");
+		 return photogtaphetsDTOs;
 	 }	
-	 private void exportMistakeInExpensesMaterialAccounts() {
+	 public Set<DDSPurchases> exportMistakeInExpensesMaterialAccounts() {
 		 List<Details> details = detailsService.findMistakeInExpensesMaterialAccounts();
-		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 Set<DDSPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,DDSPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/expenses-material-accounts-mistake.json");
+		 return photogtaphetsDTOs;
 	 }
 		
-	 private void exportMistakeInSaleAccount() {
+	 public Set<DDSPurchases> exportMistakeInSaleAccount() {
 		 List<Details> details = detailsService. findMistakeInSaleAccount();
-		 Set<ddsPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,ddsPurchases.class);
+		 Set<DDSPurchases> photogtaphetsDTOs = DTOConvertUtil.convertToSet(details,DDSPurchases.class);
 		 jsonSerializer.serialize(photogtaphetsDTOs, "src/main/resources/output/sale-account-mistake2.json");
+		 return photogtaphetsDTOs;
 	 }
 		
 }

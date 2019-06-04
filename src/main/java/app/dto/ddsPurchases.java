@@ -9,13 +9,11 @@ import javax.xml.bind.annotation.XmlTransient;
 
 import com.google.gson.annotations.Expose;
 
-import app.model.Header;
-
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ddsPurchases implements Serializable {
+public class DDSPurchases implements Serializable {
 	@XmlTransient
 	@Expose
-	ddsPurchases2 accHeaderId;
+	DDSPurchases2 accHeaderId;
 
 	@XmlTransient
 	@Expose
@@ -37,11 +35,11 @@ public class ddsPurchases implements Serializable {
 	@Expose
 	String textOfEntry;
 
-	public ddsPurchases2 getAccHeaderId() {
+	public DDSPurchases2 getAccHeaderId() {
 		return accHeaderId;
 	}
 
-	public void setAccHeaderId(ddsPurchases2 accHeaderId) {
+	public void setAccHeaderId(DDSPurchases2 accHeaderId) {
 		this.accHeaderId = accHeaderId;
 	}
 

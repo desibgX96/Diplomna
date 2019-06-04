@@ -1,156 +1,332 @@
 [
   {
-    "line": 0,
-    "debit": "123",
-    "credit": "603",
-    "amount": 37184.13,
-    "textOfEntry": "ГОДИШНО ПРИКЛ."
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "601",
-    "amount": 52864.71,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "603",
-    "amount": 43986.97,
-    "textOfEntry": "ГОДИШНО ПРИКЛ."
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "602",
-    "amount": 26028.29,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "605",
-    "amount": 13332.36,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "702",
-    "credit": "602",
-    "amount": 19.93,
-    "textOfEntry": "Себстойност"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "604",
-    "amount": 86471.70,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "4111",
-    "credit": "609",
-    "amount": 35.83,
-    "textOfEntry": "Продажба на стоки"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "604",
-    "amount": 74513.53,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "609",
-    "amount": 9567.38,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "603",
-    "amount": 42950.21,
-    "textOfEntry": "ГОДИШНО ПРИКЛ."
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "601",
-    "amount": 45906.26,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "501",
-    "credit": "602",
-    "amount": 17.00,
-    "textOfEntry": ""
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "604",
-    "amount": 68133.40,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "602",
-    "amount": 32345.82,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "605",
-    "amount": 13257.67,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "602",
-    "amount": 35252.23,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "609",
-    "amount": 4418.90,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
-    "debit": "123",
-    "credit": "609",
-    "amount": 146.93,
-    "textOfEntry": "годишно приключване"
-  },
-  {
-    "line": 0,
+    "accHeaderId": {
+      "id": 53952.0,
+      "journalNumber": 9.0,
+      "period": "Feb 21, 2017 12:00:00 AM",
+      "docNr": "9",
+      "docDate": "Feb 21, 2017 12:00:00 AM",
+      "refName": "Адвокатско Дружество \"Почекански, П"
+    },
+    "line": 1,
     "debit": "5031",
     "credit": "601",
     "amount": 60.00,
     "textOfEntry": "Плащане"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 31742.0,
+      "journalNumber": 17351.0,
+      "period": "Dec 31, 2015 12:00:00 AM",
+      "docNr": "55",
+      "docDate": "Dec 31, 2015 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 2,
+    "debit": "123",
+    "credit": "603",
+    "amount": 43986.97,
+    "textOfEntry": "ГОДИШНО ПРИКЛ."
+  },
+  {
+    "accHeaderId": {
+      "id": 31741.0,
+      "journalNumber": 17350.0,
+      "period": "Dec 31, 2015 12:00:00 AM",
+      "docNr": "54",
+      "docDate": "Dec 31, 2015 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 5,
+    "debit": "123",
+    "credit": "609",
+    "amount": 146.93,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 78705.0,
+      "journalNumber": 42798.0,
+      "period": "Dec 31, 2017 12:00:00 AM",
+      "docNr": "254",
+      "docDate": "Dec 31, 2017 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 3,
+    "debit": "123",
+    "credit": "604",
+    "amount": 68133.40,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 56111.0,
+      "journalNumber": 30214.0,
+      "period": "Dec 31, 2016 12:00:00 AM",
+      "docNr": "132",
+      "docDate": "Dec 31, 2016 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 4,
+    "debit": "123",
+    "credit": "605",
+    "amount": 13342.65,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 56111.0,
+      "journalNumber": 30214.0,
+      "period": "Dec 31, 2016 12:00:00 AM",
+      "docNr": "132",
+      "docDate": "Dec 31, 2016 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 5,
+    "debit": "123",
+    "credit": "609",
+    "amount": 9567.38,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 56111.0,
+      "journalNumber": 30214.0,
+      "period": "Dec 31, 2016 12:00:00 AM",
+      "docNr": "132",
+      "docDate": "Dec 31, 2016 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 1,
+    "debit": "123",
+    "credit": "601",
+    "amount": 52864.71,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 33.0,
+      "journalNumber": 410.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0200000001",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "ЕТ Димитър Никлин"
+    },
+    "line": 3,
+    "debit": "702",
+    "credit": "602",
+    "amount": 19.93,
+    "textOfEntry": "Себстойност"
+  },
+  {
+    "accHeaderId": {
+      "id": 31741.0,
+      "journalNumber": 17350.0,
+      "period": "Dec 31, 2015 12:00:00 AM",
+      "docNr": "54",
+      "docDate": "Dec 31, 2015 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 4,
+    "debit": "123",
+    "credit": "605",
+    "amount": 13257.67,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 56111.0,
+      "journalNumber": 30214.0,
+      "period": "Dec 31, 2016 12:00:00 AM",
+      "docNr": "132",
+      "docDate": "Dec 31, 2016 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 13,
+    "debit": "123",
+    "credit": "603",
+    "amount": 42950.21,
+    "textOfEntry": "ГОДИШНО ПРИКЛ."
+  },
+  {
+    "accHeaderId": {
+      "id": 31741.0,
+      "journalNumber": 17350.0,
+      "period": "Dec 31, 2015 12:00:00 AM",
+      "docNr": "54",
+      "docDate": "Dec 31, 2015 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 1,
     "debit": "123",
     "credit": "601",
     "amount": 48383.41,
     "textOfEntry": "годишно приключване"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 78705.0,
+      "journalNumber": 42798.0,
+      "period": "Dec 31, 2017 12:00:00 AM",
+      "docNr": "254",
+      "docDate": "Dec 31, 2017 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 4,
     "debit": "123",
     "credit": "605",
-    "amount": 13342.65,
+    "amount": 13332.36,
     "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 50304.0,
+      "journalNumber": 27512.0,
+      "period": "Dec 27, 2016 12:00:00 AM",
+      "docNr": "0000015568",
+      "docDate": "Dec 27, 2016 12:00:00 AM",
+      "refName": "Антония Янакиева"
+    },
+    "line": 1,
+    "debit": "4111",
+    "credit": "609",
+    "amount": 35.83,
+    "textOfEntry": "Продажба на стоки"
+  },
+  {
+    "accHeaderId": {
+      "id": 78705.0,
+      "journalNumber": 42798.0,
+      "period": "Dec 31, 2017 12:00:00 AM",
+      "docNr": "254",
+      "docDate": "Dec 31, 2017 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 13,
+    "debit": "123",
+    "credit": "603",
+    "amount": 37184.13,
+    "textOfEntry": "ГОДИШНО ПРИКЛ."
+  },
+  {
+    "accHeaderId": {
+      "id": 78705.0,
+      "journalNumber": 42798.0,
+      "period": "Dec 31, 2017 12:00:00 AM",
+      "docNr": "254",
+      "docDate": "Dec 31, 2017 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 1,
+    "debit": "123",
+    "credit": "601",
+    "amount": 45906.26,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 78705.0,
+      "journalNumber": 42798.0,
+      "period": "Dec 31, 2017 12:00:00 AM",
+      "docNr": "254",
+      "docDate": "Dec 31, 2017 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 5,
+    "debit": "123",
+    "credit": "609",
+    "amount": 4418.90,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 78705.0,
+      "journalNumber": 42798.0,
+      "period": "Dec 31, 2017 12:00:00 AM",
+      "docNr": "254",
+      "docDate": "Dec 31, 2017 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 2,
+    "debit": "123",
+    "credit": "602",
+    "amount": 35252.23,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 31741.0,
+      "journalNumber": 17350.0,
+      "period": "Dec 31, 2015 12:00:00 AM",
+      "docNr": "54",
+      "docDate": "Dec 31, 2015 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 2,
+    "debit": "123",
+    "credit": "602",
+    "amount": 32345.82,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 56111.0,
+      "journalNumber": 30214.0,
+      "period": "Dec 31, 2016 12:00:00 AM",
+      "docNr": "132",
+      "docDate": "Dec 31, 2016 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 3,
+    "debit": "123",
+    "credit": "604",
+    "amount": 74513.53,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 31741.0,
+      "journalNumber": 17350.0,
+      "period": "Dec 31, 2015 12:00:00 AM",
+      "docNr": "54",
+      "docDate": "Dec 31, 2015 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 3,
+    "debit": "123",
+    "credit": "604",
+    "amount": 86471.70,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 56111.0,
+      "journalNumber": 30214.0,
+      "period": "Dec 31, 2016 12:00:00 AM",
+      "docNr": "132",
+      "docDate": "Dec 31, 2016 12:00:00 AM",
+      "refName": "ЕКОРЕД ООД"
+    },
+    "line": 2,
+    "debit": "123",
+    "credit": "602",
+    "amount": 26028.29,
+    "textOfEntry": "годишно приключване"
+  },
+  {
+    "accHeaderId": {
+      "id": 40.0,
+      "journalNumber": 411.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "100209",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "ЕТ Васил Пиперевски"
+    },
+    "line": 1,
+    "debit": "501",
+    "credit": "602",
+    "amount": 17.00,
+    "textOfEntry": ""
   }
 ]

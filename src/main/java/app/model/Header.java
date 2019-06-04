@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Null;
 
 @Entity
 @Table(name = "AccHeader")
@@ -74,18 +75,6 @@ public class Header {
 	@Basic
 	@Column(name = "CHANGED_ON",nullable = true)
 	private Date changededOn;
-	
-	@Basic
-	@Column(name = "CREATED_BY",nullable = true)
-	private short createdBy;
-	
-	@Basic
-	@Column(name = "CHANGED_BY",nullable = true)
-	private short changedBy;
-	
-	@Basic
-	@Column(name = "DOC_ID")
-	private double docId;
 
 	public double getId() {
 		return id;
@@ -103,21 +92,6 @@ public class Header {
 		this.changededOn = changededOn;
 	}
 
-	public short getCreatedBy() {
-		return createdBy;
-	}
-
-	public void setCreatedBy(short createdBy) {
-		this.createdBy = createdBy;
-	}
-
-	public short getChangedBy() {
-		return changedBy;
-	}
-
-	public void setChangedBy(short changedBy) {
-		this.changedBy = changedBy;
-	}
 
 	public double getJournalNumber() {
 		return journalNumber;
@@ -213,14 +187,6 @@ public class Header {
 
 	public void setCreatedOn(Date createdOn) {
 		this.createdOn = createdOn;
-	}
-
-	public double getDocId() {
-		return docId;
-	}
-
-	public void setDocId(double docId) {
-		this.docId = docId;
 	}
 
 	

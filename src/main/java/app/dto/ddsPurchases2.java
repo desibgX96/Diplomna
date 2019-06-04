@@ -3,16 +3,13 @@ package app.dto;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 
 import com.google.gson.annotations.Expose;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ddsPurchases2 implements Serializable{
+public class DDSPurchases2 implements Serializable{
 	
 	@Expose
 	private double id;

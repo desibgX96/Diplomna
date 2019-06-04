@@ -5,9 +5,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Set;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -15,20 +17,21 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableModel;
+
+import app.dto.DDSPurchases;
 
 class EventsDemoPanel2 extends JFrame {
 	
 	JPanel panel1 = new JPanel();
 	BoxLayout vertical = new BoxLayout(panel1,BoxLayout.Y_AXIS);
 	
-	private JRadioButton proverka1 = new JRadioButton();
-	private JRadioButton proverka2 = new JRadioButton();
-	private JRadioButton proverka3 = new JRadioButton();
-	private JRadioButton proverka4 = new JRadioButton();
-	private JRadioButton proverka5 = new JRadioButton();
-	private JRadioButton proverka6 = new JRadioButton();
+	private JCheckBox proverka1 = new JCheckBox();
+	private JCheckBox proverka2 = new JCheckBox();
+	private JCheckBox proverka3 = new JCheckBox();
+	private JCheckBox proverka4 = new JCheckBox();
+	private JCheckBox proverka5 = new JCheckBox();
+	private JCheckBox proverka6 = new JCheckBox();
 	//https://www.youtube.com/watch?v=iOV_oaJhABQ
 	private JLabel beginPeriod = new JLabel("From: ");
 	private JLabel endPeriod = new JLabel("To: ");
@@ -39,9 +42,13 @@ class EventsDemoPanel2 extends JFrame {
 	private JComboBox<String> period2Month = new JComboBox<String>();
 	private JComboBox<String> period2Day = new JComboBox<String>();
 	private JButton proverka = new JButton();
+	private JButton save = new JButton();
+	private JButton clear = new JButton();
     JTable table = new JTable();
-	
-	public EventsDemoPanel2() {
+	private final ConsoleRunner controler;
+    
+	public EventsDemoPanel2(final ConsoleRunner controler) {
+		this.controler = controler;
 		proverka1.setText("DDSMistakenEntrys");
 		proverka2.setText("DDSMistakenSales");
 		proverka3.setText("MistakeInCostAccounts");
@@ -49,6 +56,8 @@ class EventsDemoPanel2 extends JFrame {
 		proverka5.setText("MistakeInExpensesMaterialAccounts");
 		proverka6.setText("MistakeInSaleAccount");
 		proverka.setText("Start data extraction");
+		save.setText("Save table");
+		clear.setText("Clear table");
 		
 		JPanel radioButtons = new JPanel();
 		BoxLayout rbHorizontal = new BoxLayout(radioButtons,BoxLayout.X_AXIS);
@@ -101,23 +110,18 @@ class EventsDemoPanel2 extends JFrame {
 		BoxLayout bHorizontal = new BoxLayout(buttonFunc,BoxLayout.X_AXIS);
 		buttonFunc.setLayout(bHorizontal);
 		buttonFunc.add(proverka);
+		buttonFunc.add(save);
+		buttonFunc.add(clear);
 		panel1.add(buttonFunc);
 		
 //https://www.youtube.com/watch?v=22MBsRYuM4Q
 	        JPanel tablePanel = new JPanel();
 	        tablePanel.setLayout(new BorderLayout());
-	        final Object[] colums = {"line","debit","credit","amount","textOfEntry"};
+	        final Object[] colums = {"line","debit","credit","amount","textOfEntry","header id","journalNumber","period","docNr","docDate","refName"};
 	        DefaultTableModel modelN = new DefaultTableModel();
 		    
 		     modelN.setColumnIdentifiers(colums);
 		     table.setModel(modelN);
-		     Object[] o = new Object[5];
-		     o[0] = "aaaa";
-		     o[1] = "aaaa";
-		     o[2] = "aaaa";
-		     o[3] = "aaaa";
-		     o[4] = "aaaa";
-		     modelN.addRow(o);
 
 
 	        JScrollPane tableContainer = new JScrollPane(table);
@@ -128,50 +132,149 @@ class EventsDemoPanel2 extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) { 
-				 JTable table = new JTable();
-			     DefaultTableModel model = new DefaultTableModel();
-			    
-			     model.setColumnIdentifiers(colums);
-			     table.setModel(model);
-				
+	
+				DefaultTableModel model = (DefaultTableModel) table.getModel();
 				if(proverka1.isSelected()) {
-					//ConsoleRunner cr = new ConsoleRunner();
-					//Set<ddsPurchases> tableSet = cr.exportDDSMistakenEntrys();
-					//for (ddsPurchases s : tableSet) {
-				     Object[] o = new Object[5];
-				     o[0] = "bbbb";//s.getLine();
-				     o[1] = "bbbb";//s.getDebit();
-				     o[2] = "bbbb";//s.getCredit();
-				     o[3] = "bbbb";//s.getAmount();
-				     o[4] = "bbbb";//s.getTextOfEntry();
+					Set<DDSPurchases> tableSet = controler.exportDDSMistakenEntrys();
+					for (DDSPurchases s : tableSet) {
+				     Object[] o = new Object[11];
+				     o[0] = s.getLine();
+				     o[1] = s.getDebit();
+				     o[2] = s.getCredit();
+				     o[3] = s.getAmount();
+				     o[4] = s.getTextOfEntry();
+				     o[5] = s.getAccHeaderId().getId();
+				     o[6] = s.getAccHeaderId().getJournalNumber();
+				     o[7] = s.getAccHeaderId().getPeriod();
+				     o[8] = s.getAccHeaderId().getDocNr();
+				     o[9] = s.getAccHeaderId().getDocDate();
+				     o[10] = s.getAccHeaderId().getRefName();
 				     model.addRow(o);
 
-					//}
+					}
 				}
 				
 				if(proverka2.isSelected()) {
-					
+					Set<DDSPurchases> tableSet = controler.exportDDSMistakenSales();
+					for (DDSPurchases s : tableSet) {
+						 Object[] o = new Object[11];
+					     o[0] = s.getLine();
+					     o[1] = s.getDebit();
+					     o[2] = s.getCredit();
+					     o[3] = s.getAmount();
+					     o[4] = s.getTextOfEntry();
+					     o[5] = s.getAccHeaderId().getId();
+					     o[6] = s.getAccHeaderId().getJournalNumber();
+					     o[7] = s.getAccHeaderId().getPeriod();
+					     o[8] = s.getAccHeaderId().getDocNr();
+					     o[9] = s.getAccHeaderId().getDocDate();
+					     o[10] = s.getAccHeaderId().getRefName();
+					     model.addRow(o);
+
+					}
 				}
 				if(proverka3.isSelected()) {
-	
+					Set<DDSPurchases> tableSet = controler.exportMistakeInCostAccounts();
+					for (DDSPurchases s : tableSet) {
+						 Object[] o = new Object[11];
+					     o[0] = s.getLine();
+					     o[1] = s.getDebit();
+					     o[2] = s.getCredit();
+					     o[3] = s.getAmount();
+					     o[4] = s.getTextOfEntry();
+					     o[5] = s.getAccHeaderId().getId();
+					     o[6] = s.getAccHeaderId().getJournalNumber();
+					     o[7] = s.getAccHeaderId().getPeriod();
+					     o[8] = s.getAccHeaderId().getDocNr();
+					     o[9] = s.getAccHeaderId().getDocDate();
+					     o[10] = s.getAccHeaderId().getRefName();
+					     model.addRow(o);
+
+					}
 				}
 				if(proverka4.isSelected()) {
-	
+					Set<DDSPurchases> tableSet = controler.exportMistakeInUnitCosts();
+					for (DDSPurchases s : tableSet) {
+						 Object[] o = new Object[11];
+					     o[0] = s.getLine();
+					     o[1] = s.getDebit();
+					     o[2] = s.getCredit();
+					     o[3] = s.getAmount();
+					     o[4] = s.getTextOfEntry();
+					     o[5] = s.getAccHeaderId().getId();
+					     o[6] = s.getAccHeaderId().getJournalNumber();
+					     o[7] = s.getAccHeaderId().getPeriod();
+					     o[8] = s.getAccHeaderId().getDocNr();
+					     o[9] = s.getAccHeaderId().getDocDate();
+					     o[10] = s.getAccHeaderId().getRefName();
+					     model.addRow(o);
+					}
 				}
 				if(proverka5.isSelected()) {
-	
+					Set<DDSPurchases> tableSet = controler.exportMistakeInExpensesMaterialAccounts();
+					for (DDSPurchases s : tableSet) {
+						 Object[] o = new Object[11];
+					     o[0] = s.getLine();
+					     o[1] = s.getDebit();
+					     o[2] = s.getCredit();
+					     o[3] = s.getAmount();
+					     o[4] = s.getTextOfEntry();
+					     o[5] = s.getAccHeaderId().getId();
+					     o[6] = s.getAccHeaderId().getJournalNumber();
+					     o[7] = s.getAccHeaderId().getPeriod();
+					     o[8] = s.getAccHeaderId().getDocNr();
+					     o[9] = s.getAccHeaderId().getDocDate();
+					     o[10] = s.getAccHeaderId().getRefName();
+					     model.addRow(o);
+					}
 				}
 				if(proverka6.isSelected()) {
-					
+					Set<DDSPurchases> tableSet = controler.exportMistakeInSaleAccount();
+					for (DDSPurchases s : tableSet) {
+						 Object[] o = new Object[11];
+					     o[0] = s.getLine();
+					     o[1] = s.getDebit();
+					     o[2] = s.getCredit();
+					     o[3] = s.getAmount();
+					     o[4] = s.getTextOfEntry();
+					     o[5] = s.getAccHeaderId().getId();
+					     o[6] = s.getAccHeaderId().getJournalNumber();
+					     o[7] = s.getAccHeaderId().getPeriod();
+					     o[8] = s.getAccHeaderId().getDocNr();
+					     o[9] = s.getAccHeaderId().getDocDate();
+					     o[10] = s.getAccHeaderId().getRefName();
+					     model.addRow(o);
+
+					}
 				}
-				table.tableChanged(new TableModelEvent(model));
+				//table.tableChanged(new TableModelEvent(model));
 			}
 				
 		});
 		
+		save.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+			
+	});
+		
+		clear.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) { 
+				DefaultTableModel model = (DefaultTableModel) table.getModel();
+				model.setRowCount(0);
+			}
+			
+	});
+		
 		add(panel1);
 		setTitle("Login Window");
-		setSize(new Dimension(1000,1000));
+		setSize(new Dimension(1200,600));
+		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 	}

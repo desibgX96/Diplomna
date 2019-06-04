@@ -1,51 +1,107 @@
 [
   {
-    "line": 0,
-    "debit": "501",
-    "credit": "304",
-    "amount": 86717.12,
-    "textOfEntry": "брак"
-  },
-  {
-    "line": 0,
-    "debit": "4111",
-    "credit": "304",
-    "amount": 32.05,
-    "textOfEntry": "Себстойност"
-  },
-  {
-    "line": 0,
-    "debit": "501",
-    "credit": "304",
-    "amount": 9513.51,
-    "textOfEntry": "брак"
-  },
-  {
-    "line": 0,
-    "debit": "699",
-    "credit": "304",
-    "amount": 2921.48,
-    "textOfEntry": "брак"
-  },
-  {
-    "line": 0,
+    "accHeaderId": {
+      "id": 38.0,
+      "journalNumber": 415.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0200000004",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "Дерматологична Клиника София - ГПСИ"
+    },
+    "line": 3,
     "debit": "501",
     "credit": "304",
     "amount": 31.84,
     "textOfEntry": "Себстойност"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 38.0,
+      "journalNumber": 415.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0200000004",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "Дерматологична Клиника София - ГПСИ"
+    },
+    "line": 1,
     "debit": "4111",
     "credit": "302",
     "amount": 50.00,
     "textOfEntry": "Продажба на стоки"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 35.0,
+      "journalNumber": 412.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "0200000002",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "Съни Дриймс 1 ООД"
+    },
+    "line": 3,
+    "debit": "4111",
+    "credit": "304",
+    "amount": 32.05,
+    "textOfEntry": "Себстойност"
+  },
+  {
+    "accHeaderId": {
+      "id": 76328.0,
+      "journalNumber": 41568.0,
+      "period": "Jan 3, 2017 12:00:00 AM",
+      "docNr": "15",
+      "docDate": "Jan 3, 2017 12:00:00 AM",
+      "refName": "Екоред ООД"
+    },
+    "line": 1,
+    "debit": "501",
+    "credit": "304",
+    "amount": 86717.12,
+    "textOfEntry": "брак"
+  },
+  {
+    "accHeaderId": {
+      "id": 78283.0,
+      "journalNumber": 42597.0,
+      "period": "May 9, 2017 12:00:00 AM",
+      "docNr": "17",
+      "docDate": "May 9, 2017 12:00:00 AM",
+      "refName": "Екоред ООД"
+    },
+    "line": 1,
+    "debit": "699",
+    "credit": "304",
+    "amount": 2921.48,
+    "textOfEntry": "брак"
+  },
+  {
+    "accHeaderId": {
+      "id": 50304.0,
+      "journalNumber": 27512.0,
+      "period": "Dec 27, 2016 12:00:00 AM",
+      "docNr": "0000015568",
+      "docDate": "Dec 27, 2016 12:00:00 AM",
+      "refName": "Антония Янакиева"
+    },
+    "line": 3,
     "debit": "4011",
     "credit": "304",
     "amount": 31.78,
     "textOfEntry": "Себстойност"
+  },
+  {
+    "accHeaderId": {
+      "id": 76329.0,
+      "journalNumber": 41569.0,
+      "period": "Apr 28, 2017 12:00:00 AM",
+      "docNr": "16",
+      "docDate": "Apr 28, 2017 12:00:00 AM",
+      "refName": "Екоред ООД"
+    },
+    "line": 1,
+    "debit": "501",
+    "credit": "304",
+    "amount": 9513.51,
+    "textOfEntry": "брак"
   }
 ]

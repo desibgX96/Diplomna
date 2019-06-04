@@ -1,13 +1,29 @@
 [
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 50304.0,
+      "journalNumber": 27512.0,
+      "period": "Dec 27, 2016 12:00:00 AM",
+      "docNr": "0000015568",
+      "docDate": "Dec 27, 2016 12:00:00 AM",
+      "refName": "Антония Янакиева"
+    },
+    "line": 2,
     "debit": "4111",
     "credit": "611",
     "amount": 7.17,
     "textOfEntry": "ДДС при продажба"
   },
   {
-    "line": 0,
+    "accHeaderId": {
+      "id": 39.0,
+      "journalNumber": 415.0,
+      "period": "Jan 5, 2015 12:00:00 AM",
+      "docNr": "100215",
+      "docDate": "Jan 5, 2015 12:00:00 AM",
+      "refName": "Дерматологична Клиника София - ГПСИ"
+    },
+    "line": 1,
     "debit": "501",
     "credit": "611",
     "amount": 60.00,
