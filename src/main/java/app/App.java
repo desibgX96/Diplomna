@@ -129,7 +129,8 @@ public class App
     	        	 String name = jtfUsername.getText(); 
 					 String pass = jpfPassword.getText(); 
 					 File file = new File("E:\\diplomna\\Pass.txt"); 
-					  
+					  //https://stackoverflow.com/questions/27962116/simplest-way-to-encrypt-a-text-file-in-java
+					 //https://stackoverflow.com/questions/38931656/hide-password-in-text-file
 					  BufferedReader br;
 					  String st; 
 					try {
@@ -144,7 +145,8 @@ public class App
 								//dispose();
 							}
 							else {
-								JOptionPane.showMessageDialog(null,"Wrong username or password. Access denied!","ERROR",JOptionPane.ERROR_MESSAGE);
+								//JOptionPane.showMessageDialog(null,"Wrong username or password. Access denied!","ERROR",JOptionPane.ERROR_MESSAGE);
+								jlblStatus.setText("Invalid username or password");
 							}
 						  }
 					} catch (FileNotFoundException e2) {

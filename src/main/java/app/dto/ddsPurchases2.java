@@ -5,27 +5,34 @@ import java.util.Date;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 
 import com.google.gson.annotations.Expose;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class DDSPurchases2 implements Serializable{
 	
+	@XmlElement
 	@Expose
 	private double id;
 	
+	@XmlElement
 	@Expose
 	private double journalNumber;
 	
+	@XmlElement
 	@Expose
     private Date period;
 
+	@XmlElement
 	@Expose
 	private String docNr;
 	
+	@XmlElement
 	@Expose
 	private Date docDate;
 
+	@XmlElement
 	@Expose
 	private String refName;
 
