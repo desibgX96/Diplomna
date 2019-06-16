@@ -1,5 +1,6 @@
 package app.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Basic;
@@ -14,7 +15,7 @@ import javax.validation.constraints.Null;
 
 @Entity
 @Table(name = "AccHeader")
-public class Header {
+public class Header implements Serializable{
 
 	@Id
 	@Column(name = "ID")

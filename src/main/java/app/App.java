@@ -161,7 +161,7 @@ public class App
     	      jbtCancel.addActionListener(new ActionListener() {
     	         @Override
     	         public void actionPerformed(ActionEvent e) {
-    	        	 mainFrame.setVisible(false);
+    	        	 mainFrame.dispose();
     	         }
     	      });
     	   }

@@ -19,4 +19,6 @@ public interface DetailsServiseInterface {
 	List<Details> findMistakeInExpensesMaterialAccounts();
 
 	List<Details> findMistakeInSaleAccount();
+	
+	List<Details> findCustomDetail(String credit, String debit);
 }

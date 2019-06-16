@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import app.model.Details;
@@ -23,10 +24,13 @@ public interface DetailsRepository extends JpaRepository< Details, Integer> {
 	@Query("Select d from Details as d inner join d.accHeaderId as h where d.credit LIKE '%61%' AND NOT (d.debit LIKE '%70%')")
 	List<Details> findUnitCosts();
 	
-	@Query("Select d from Details as d inner join d.accHeaderId as h where d.credit LIKE '%30%' AND NOT (d.debit LIKE '%70%' OR d.debit LIKE '%60%')")
+	@Query("Select d from Details as d inner join d.accHeaderId as h where d.credit LIKE '%30%' AND NOT (d.debit LIKE '%70%' OR d.debit LIKE '%60%' OR d.debit LIKE '%30%')")
 	List<Details> findExpensesMaterialAccounts();
 	
 	@Query("Select d from Details as d inner join d.accHeaderId as h where d.debit LIKE '%70%' AND NOT (d.credit LIKE '%20%' OR d.credit LIKE '%30%' OR d.credit LIKE '%61%')")
 	List<Details> findSaleAccount();
+	
+	@Query("Select d from Details as d inner join d.accHeaderId as h where  d.credit LIKE :credit  AND d.debit LIKE :debit")
+	List<Details> findCustom(@Param(value = "credit") String credit, @Param(value = "debit") String debit);
 
 }
