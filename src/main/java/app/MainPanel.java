@@ -351,7 +351,8 @@ class MainPanel extends JFrame {
 		setVisible(true);
 	}
 
-	private void RestrictByDate(Set<DDSPurchases> detailsDTOs) {
+	private void RestrictByDate(final Set<DDSPurchases> detailsDTOs) {
+		Set<DDSPurchases> remove = new HashSet<DDSPurchases>();
 		if (!period1Year.getSelectedItem().equals("----") && !period2Year.getSelectedItem().equals("----") &&
 				!period1Month.getSelectedItem().equals("--") && !period2Month.getSelectedItem().equals("--") &&
 				!period1Day.getSelectedItem().equals("--") && !period2Day.getSelectedItem().equals("--")) {
@@ -371,11 +372,12 @@ class MainPanel extends JFrame {
 					e.printStackTrace();
 				}
 				Date toCheck = (Date) s.getAccHeaderId().getPeriod();
-
-				if (toCheck.after(ends) || toCheck.before(begins)) {
-					detailsDTOs.remove(s);
+				if (!(toCheck.after(begins) && toCheck.before(ends))) {
+					remove.add(s);
 				}
 			}
 		}
+		remove.stream().forEach(o -> detailsDTOs.remove(o));
+		
 	}
 }

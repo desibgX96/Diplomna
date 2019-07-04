@@ -2,483 +2,18 @@
 <Details>
     <mistakes>
         <accHeaderId>
-            <id>35.0</id>
-            <journalNumber>412.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000002</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Съни Дриймс 1 ООД</refName>
+            <id>42.0</id>
+            <journalNumber>416.0</journalNumber>
+            <period>2015-01-06T00:00:00+02:00</period>
+            <docNr>0200000008</docNr>
+            <docDate>2015-01-06T00:00:00+02:00</docDate>
+            <refName>АСС Фешън ЕООД</refName>
         </accHeaderId>
         <line>1</line>
         <debit>702</debit>
-        <credit>4111</credit>
-        <amount>45.83</amount>
-        <textOfEntry>Продажба на стоки</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>35.0</id>
-            <journalNumber>412.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000002</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Съни Дриймс 1 ООД</refName>
-        </accHeaderId>
-        <line>2</line>
-        <debit>4532</debit>
-        <credit>4532</credit>
-        <amount>9.17</amount>
-        <textOfEntry>ДДС при продажба</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>50304.0</id>
-            <journalNumber>27512.0</journalNumber>
-            <period>2016-12-27T00:00:00+02:00</period>
-            <docNr>0000015568</docNr>
-            <docDate>2016-12-27T00:00:00+02:00</docDate>
-            <refName>Антония Янакиева</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>4111</debit>
-        <credit>609</credit>
-        <amount>35.83</amount>
-        <textOfEntry>Продажба на стоки</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>4</line>
-        <debit>123</debit>
-        <credit>605</credit>
-        <amount>13342.65</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>76328.0</id>
-            <journalNumber>41568.0</journalNumber>
-            <period>2017-01-03T00:00:00+02:00</period>
-            <docNr>15</docNr>
-            <docDate>2017-01-03T00:00:00+02:00</docDate>
-            <refName>Екоред ООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>501</debit>
-        <credit>304</credit>
-        <amount>86717.12</amount>
-        <textOfEntry>брак</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>2</line>
-        <debit>123</debit>
-        <credit>602</credit>
-        <amount>35252.23</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>438.0</id>
-            <journalNumber>663.0</journalNumber>
-            <period>2015-01-15T00:00:00+02:00</period>
-            <docNr>0300000022</docNr>
-            <docDate>2015-01-15T00:00:00+02:00</docDate>
-            <refName>АЛХАТ ЕООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>4532</debit>
         <credit>702</credit>
-        <amount>34.96</amount>
+        <amount>188.67</amount>
         <textOfEntry>Продажба на стоки</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>38.0</id>
-            <journalNumber>415.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000004</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Дерматологична Клиника София - ГПСИ</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>501</debit>
-        <credit>304</credit>
-        <amount>31.84</amount>
-        <textOfEntry>Себстойност</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>4</line>
-        <debit>123</debit>
-        <credit>605</credit>
-        <amount>13332.36</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>33.0</id>
-            <journalNumber>410.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000001</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>ЕТ Димитър Никлин</refName>
-        </accHeaderId>
-        <line>2</line>
-        <debit>4532</debit>
-        <credit>4111</credit>
-        <amount>4.94</amount>
-        <textOfEntry>ДДС при продажба</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>31741.0</id>
-            <journalNumber>17350.0</journalNumber>
-            <period>2015-12-31T00:00:00+02:00</period>
-            <docNr>54</docNr>
-            <docDate>2015-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>123</debit>
-        <credit>604</credit>
-        <amount>86471.70</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>13</line>
-        <debit>123</debit>
-        <credit>603</credit>
-        <amount>37184.13</amount>
-        <textOfEntry>ГОДИШНО ПРИКЛ.</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>39.0</id>
-            <journalNumber>415.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>100215</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Дерматологична Клиника София - ГПСИ</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>501</debit>
-        <credit>611</credit>
-        <amount>60.00</amount>
-        <textOfEntry></textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>55581.0</id>
-            <journalNumber>30215.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>131</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>709</debit>
-        <credit>123</credit>
-        <amount>78.23</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>31741.0</id>
-            <journalNumber>17350.0</journalNumber>
-            <period>2015-12-31T00:00:00+02:00</period>
-            <docNr>54</docNr>
-            <docDate>2015-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>2</line>
-        <debit>123</debit>
-        <credit>602</credit>
-        <amount>32345.82</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>35.0</id>
-            <journalNumber>412.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000002</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Съни Дриймс 1 ООД</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>4111</debit>
-        <credit>304</credit>
-        <amount>32.05</amount>
-        <textOfEntry>Себстойност</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>5</line>
-        <debit>123</debit>
-        <credit>609</credit>
-        <amount>4418.90</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>2</line>
-        <debit>123</debit>
-        <credit>602</credit>
-        <amount>26028.29</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>10</line>
-        <debit>702</debit>
-        <credit>123</credit>
-        <amount>262663.51</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>33.0</id>
-            <journalNumber>410.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000001</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>ЕТ Димитър Никлин</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>702</debit>
-        <credit>602</credit>
-        <amount>19.93</amount>
-        <textOfEntry>Себстойност</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>41.0</id>
-            <journalNumber>410.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>100206</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>ЕТ Димитър Никлин</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>4532</debit>
-        <credit>4111</credit>
-        <amount>29.65</amount>
-        <textOfEntry></textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>438.0</id>
-            <journalNumber>663.0</journalNumber>
-            <period>2015-01-15T00:00:00+02:00</period>
-            <docNr>0300000022</docNr>
-            <docDate>2015-01-15T00:00:00+02:00</docDate>
-            <refName>АЛХАТ ЕООД</refName>
-        </accHeaderId>
-        <line>2</line>
-        <debit>4111</debit>
-        <credit>4531</credit>
-        <amount>6.99</amount>
-        <textOfEntry>ДДС при продажба</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>123</debit>
-        <credit>601</credit>
-        <amount>45906.26</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>13</line>
-        <debit>123</debit>
-        <credit>603</credit>
-        <amount>42950.21</amount>
-        <textOfEntry>ГОДИШНО ПРИКЛ.</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>123</debit>
-        <credit>601</credit>
-        <amount>52864.71</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>31741.0</id>
-            <journalNumber>17350.0</journalNumber>
-            <period>2015-12-31T00:00:00+02:00</period>
-            <docNr>54</docNr>
-            <docDate>2015-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>10</line>
-        <debit>702</debit>
-        <credit>123</credit>
-        <amount>287803.69</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>38.0</id>
-            <journalNumber>415.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000004</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Дерматологична Клиника София - ГПСИ</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>4111</debit>
-        <credit>302</credit>
-        <amount>50.00</amount>
-        <textOfEntry>Продажба на стоки</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>31741.0</id>
-            <journalNumber>17350.0</journalNumber>
-            <period>2015-12-31T00:00:00+02:00</period>
-            <docNr>54</docNr>
-            <docDate>2015-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>11</line>
-        <debit>703</debit>
-        <credit>123</credit>
-        <amount>402.83</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>50304.0</id>
-            <journalNumber>27512.0</journalNumber>
-            <period>2016-12-27T00:00:00+02:00</period>
-            <docNr>0000015568</docNr>
-            <docDate>2016-12-27T00:00:00+02:00</docDate>
-            <refName>Антония Янакиева</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>4011</debit>
-        <credit>304</credit>
-        <amount>31.78</amount>
-        <textOfEntry>Себстойност</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78283.0</id>
-            <journalNumber>42597.0</journalNumber>
-            <period>2017-05-09T00:00:00+03:00</period>
-            <docNr>17</docNr>
-            <docDate>2017-05-09T00:00:00+03:00</docDate>
-            <refName>Екоред ООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>699</debit>
-        <credit>304</credit>
-        <amount>2921.48</amount>
-        <textOfEntry>брак</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>33.0</id>
-            <journalNumber>410.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0200000001</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>ЕТ Димитър Никлин</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>702</debit>
-        <credit>602</credit>
-        <amount>19.93</amount>
-        <textOfEntry>Себстойност</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>5</line>
-        <debit>123</debit>
-        <credit>609</credit>
-        <amount>9567.38</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
@@ -497,47 +32,137 @@
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>11</line>
-        <debit>703</debit>
-        <credit>123</credit>
-        <amount>305.00</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>53952.0</id>
-            <journalNumber>9.0</journalNumber>
-            <period>2017-02-21T00:00:00+02:00</period>
-            <docNr>9</docNr>
-            <docDate>2017-02-21T00:00:00+02:00</docDate>
-            <refName>Адвокатско Дружество "Почекански, П</refName>
+            <id>41.0</id>
+            <journalNumber>410.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>100206</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>ЕТ Димитър Никлин</refName>
         </accHeaderId>
         <line>1</line>
-        <debit>5031</debit>
-        <credit>601</credit>
-        <amount>60.00</amount>
-        <textOfEntry>Плащане</textOfEntry>
+        <debit>4532</debit>
+        <credit>4111</credit>
+        <amount>29.65</amount>
+        <textOfEntry></textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
+            <id>33.0</id>
+            <journalNumber>410.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000001</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>ЕТ Димитър Никлин</refName>
+        </accHeaderId>
+        <line>2</line>
+        <debit>4532</debit>
+        <credit>4111</credit>
+        <amount>4.94</amount>
+        <textOfEntry>ДДС при продажба</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>37.0</id>
+            <journalNumber>414.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0000005420</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>Генара ООД</refName>
+        </accHeaderId>
+        <line>1</line>
+        <debit>4532</debit>
+        <credit>4011</credit>
+        <amount>10740.00</amount>
+        <textOfEntry>Покупка на стока</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>35.0</id>
+            <journalNumber>412.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000002</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>Съни Дриймс 1 ООД</refName>
+        </accHeaderId>
+        <line>2</line>
+        <debit>4532</debit>
+        <credit>4532</credit>
+        <amount>9.17</amount>
+        <textOfEntry>ДДС при продажба</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>38.0</id>
+            <journalNumber>415.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000004</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>Дерматологична Клиника София - ГПСИ</refName>
+        </accHeaderId>
+        <line>3</line>
+        <debit>501</debit>
+        <credit>304</credit>
+        <amount>31.84</amount>
+        <textOfEntry>Себстойност</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>35.0</id>
+            <journalNumber>412.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000002</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>Съни Дриймс 1 ООД</refName>
+        </accHeaderId>
+        <line>1</line>
+        <debit>702</debit>
+        <credit>4111</credit>
+        <amount>45.83</amount>
+        <textOfEntry>Продажба на стоки</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>33.0</id>
+            <journalNumber>410.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000001</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>ЕТ Димитър Никлин</refName>
+        </accHeaderId>
+        <line>3</line>
+        <debit>702</debit>
+        <credit>602</credit>
+        <amount>19.93</amount>
+        <textOfEntry>Себстойност</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>35.0</id>
+            <journalNumber>412.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000002</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>Съни Дриймс 1 ООД</refName>
+        </accHeaderId>
+        <line>3</line>
+        <debit>4111</debit>
+        <credit>304</credit>
+        <amount>32.05</amount>
+        <textOfEntry>Себстойност</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>31741.0</id>
+            <journalNumber>17350.0</journalNumber>
+            <period>2015-12-31T00:00:00+02:00</period>
+            <docNr>54</docNr>
+            <docDate>2015-12-31T00:00:00+02:00</docDate>
             <refName>ЕКОРЕД ООД</refName>
         </accHeaderId>
-        <line>15</line>
-        <debit>709</debit>
-        <credit>123</credit>
-        <amount>12552.81</amount>
+        <line>2</line>
+        <debit>123</debit>
+        <credit>602</credit>
+        <amount>32345.82</amount>
         <textOfEntry>годишно приключване</textOfEntry>
     </mistakes>
     <mistakes>
@@ -557,6 +182,21 @@
     </mistakes>
     <mistakes>
         <accHeaderId>
+            <id>31741.0</id>
+            <journalNumber>17350.0</journalNumber>
+            <period>2015-12-31T00:00:00+02:00</period>
+            <docNr>54</docNr>
+            <docDate>2015-12-31T00:00:00+02:00</docDate>
+            <refName>ЕКОРЕД ООД</refName>
+        </accHeaderId>
+        <line>4</line>
+        <debit>123</debit>
+        <credit>605</credit>
+        <amount>13257.67</amount>
+        <textOfEntry>годишно приключване</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
             <id>38.0</id>
             <journalNumber>415.0</journalNumber>
             <period>2015-01-05T00:00:00+02:00</period>
@@ -564,26 +204,41 @@
             <docDate>2015-01-05T00:00:00+02:00</docDate>
             <refName>Дерматологична Клиника София - ГПСИ</refName>
         </accHeaderId>
-        <line>2</line>
+        <line>1</line>
         <debit>4111</debit>
-        <credit>4531</credit>
-        <amount>10.00</amount>
-        <textOfEntry>ДДС при продажба</textOfEntry>
+        <credit>302</credit>
+        <amount>50.00</amount>
+        <textOfEntry>Продажба на стоки</textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>40.0</id>
-            <journalNumber>411.0</journalNumber>
+            <id>33.0</id>
+            <journalNumber>410.0</journalNumber>
             <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>100209</docNr>
+            <docNr>0200000001</docNr>
             <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>ЕТ Васил Пиперевски</refName>
+            <refName>ЕТ Димитър Никлин</refName>
         </accHeaderId>
-        <line>1</line>
-        <debit>501</debit>
+        <line>3</line>
+        <debit>702</debit>
         <credit>602</credit>
-        <amount>17.00</amount>
-        <textOfEntry></textOfEntry>
+        <amount>19.93</amount>
+        <textOfEntry>Себстойност</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>31741.0</id>
+            <journalNumber>17350.0</journalNumber>
+            <period>2015-12-31T00:00:00+02:00</period>
+            <docNr>54</docNr>
+            <docDate>2015-12-31T00:00:00+02:00</docDate>
+            <refName>ЕКОРЕД ООД</refName>
+        </accHeaderId>
+        <line>3</line>
+        <debit>123</debit>
+        <credit>604</credit>
+        <amount>86471.70</amount>
+        <textOfEntry>годишно приключване</textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
@@ -602,18 +257,63 @@
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
+            <id>31741.0</id>
+            <journalNumber>17350.0</journalNumber>
+            <period>2015-12-31T00:00:00+02:00</period>
+            <docNr>54</docNr>
+            <docDate>2015-12-31T00:00:00+02:00</docDate>
             <refName>ЕКОРЕД ООД</refName>
         </accHeaderId>
         <line>11</line>
         <debit>703</debit>
         <credit>123</credit>
-        <amount>150.00</amount>
+        <amount>402.83</amount>
         <textOfEntry>годишно приключване</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>31741.0</id>
+            <journalNumber>17350.0</journalNumber>
+            <period>2015-12-31T00:00:00+02:00</period>
+            <docNr>54</docNr>
+            <docDate>2015-12-31T00:00:00+02:00</docDate>
+            <refName>ЕКОРЕД ООД</refName>
+        </accHeaderId>
+        <line>10</line>
+        <debit>702</debit>
+        <credit>123</credit>
+        <amount>287803.69</amount>
+        <textOfEntry>годишно приключване</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>50304.0</id>
+            <journalNumber>27512.0</journalNumber>
+            <period>2016-12-27T00:00:00+02:00</period>
+            <docNr>0000015568</docNr>
+            <docDate>2016-12-27T00:00:00+02:00</docDate>
+            <refName>Антония Янакиева</refName>
+        </accHeaderId>
+        <line>1</line>
+        <debit>4111</debit>
+        <credit>609</credit>
+        <amount>35.83</amount>
+        <textOfEntry>Продажба на стоки</textOfEntry>
+    </mistakes>
+    <mistakes>
+        <accHeaderId>
+            <id>39.0</id>
+            <journalNumber>415.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>100215</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>Дерматологична Клиника София - ГПСИ</refName>
+        </accHeaderId>
+        <line>1</line>
+        <debit>501</debit>
+        <credit>611</credit>
+        <amount>60.00</amount>
+        <textOfEntry></textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
@@ -632,137 +332,62 @@
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>37.0</id>
-            <journalNumber>414.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0000005420</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Генара ООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>4532</debit>
-        <credit>4011</credit>
-        <amount>10740.00</amount>
-        <textOfEntry>Покупка на стока</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>56111.0</id>
-            <journalNumber>30214.0</journalNumber>
-            <period>2016-12-31T00:00:00+02:00</period>
-            <docNr>132</docNr>
-            <docDate>2016-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
+            <id>50304.0</id>
+            <journalNumber>27512.0</journalNumber>
+            <period>2016-12-27T00:00:00+02:00</period>
+            <docNr>0000015568</docNr>
+            <docDate>2016-12-27T00:00:00+02:00</docDate>
+            <refName>Антония Янакиева</refName>
         </accHeaderId>
         <line>3</line>
-        <debit>123</debit>
-        <credit>604</credit>
-        <amount>74513.53</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>37.0</id>
-            <journalNumber>414.0</journalNumber>
-            <period>2015-01-05T00:00:00+02:00</period>
-            <docNr>0000005420</docNr>
-            <docDate>2015-01-05T00:00:00+02:00</docDate>
-            <refName>Генара ООД</refName>
-        </accHeaderId>
-        <line>2</line>
         <debit>4011</debit>
-        <credit>4531</credit>
-        <amount>2148.00</amount>
-        <textOfEntry>ДДС на покупките</textOfEntry>
+        <credit>304</credit>
+        <amount>31.78</amount>
+        <textOfEntry>Себстойност</textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>42.0</id>
-            <journalNumber>416.0</journalNumber>
-            <period>2015-01-06T00:00:00+02:00</period>
-            <docNr>0200000008</docNr>
-            <docDate>2015-01-06T00:00:00+02:00</docDate>
-            <refName>АСС Фешън ЕООД</refName>
-        </accHeaderId>
-        <line>1</line>
-        <debit>702</debit>
-        <credit>702</credit>
-        <amount>188.67</amount>
-        <textOfEntry>Продажба на стоки</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>3</line>
-        <debit>123</debit>
-        <credit>604</credit>
-        <amount>68133.40</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>76329.0</id>
-            <journalNumber>41569.0</journalNumber>
-            <period>2017-04-28T00:00:00+03:00</period>
-            <docNr>16</docNr>
-            <docDate>2017-04-28T00:00:00+03:00</docDate>
-            <refName>Екоред ООД</refName>
+            <id>40.0</id>
+            <journalNumber>411.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>100209</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>ЕТ Васил Пиперевски</refName>
         </accHeaderId>
         <line>1</line>
         <debit>501</debit>
-        <credit>304</credit>
-        <amount>9513.51</amount>
-        <textOfEntry>брак</textOfEntry>
+        <credit>602</credit>
+        <amount>17.00</amount>
+        <textOfEntry></textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>31741.0</id>
-            <journalNumber>17350.0</journalNumber>
-            <period>2015-12-31T00:00:00+02:00</period>
-            <docNr>54</docNr>
-            <docDate>2015-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
+            <id>33.0</id>
+            <journalNumber>410.0</journalNumber>
+            <period>2015-01-05T00:00:00+02:00</period>
+            <docNr>0200000001</docNr>
+            <docDate>2015-01-05T00:00:00+02:00</docDate>
+            <refName>ЕТ Димитър Никлин</refName>
         </accHeaderId>
-        <line>4</line>
-        <debit>123</debit>
-        <credit>605</credit>
-        <amount>13257.67</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
+        <line>2</line>
+        <debit>4532</debit>
+        <credit>4111</credit>
+        <amount>4.94</amount>
+        <textOfEntry>ДДС при продажба</textOfEntry>
     </mistakes>
     <mistakes>
         <accHeaderId>
-            <id>53953.0</id>
-            <journalNumber>28073.0</journalNumber>
-            <period>2017-02-24T00:00:00+02:00</period>
-            <docNr>148952</docNr>
-            <docDate>2017-02-24T00:00:00+02:00</docDate>
-            <refName>Акаунтинг Сървисис Ти Ес Енд Кей ЕО</refName>
+            <id>438.0</id>
+            <journalNumber>663.0</journalNumber>
+            <period>2015-01-15T00:00:00+02:00</period>
+            <docNr>0300000022</docNr>
+            <docDate>2015-01-15T00:00:00+02:00</docDate>
+            <refName>АЛХАТ ЕООД</refName>
         </accHeaderId>
         <line>1</line>
-        <debit>701</debit>
-        <credit>4111</credit>
-        <amount>168.00</amount>
-        <textOfEntry>Плащане</textOfEntry>
-    </mistakes>
-    <mistakes>
-        <accHeaderId>
-            <id>78705.0</id>
-            <journalNumber>42798.0</journalNumber>
-            <period>2017-12-31T00:00:00+02:00</period>
-            <docNr>254</docNr>
-            <docDate>2017-12-31T00:00:00+02:00</docDate>
-            <refName>ЕКОРЕД ООД</refName>
-        </accHeaderId>
-        <line>10</line>
-        <debit>702</debit>
-        <credit>123</credit>
-        <amount>241263.50</amount>
-        <textOfEntry>годишно приключване</textOfEntry>
+        <debit>4532</debit>
+        <credit>702</credit>
+        <amount>34.96</amount>
+        <textOfEntry>Продажба на стоки</textOfEntry>
     </mistakes>
 </Details>
